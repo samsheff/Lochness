@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4D9A2A19EC2BAC00801352 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D9A2919EC2BAC00801352 /* WebViewController.m */; };
 		3AEC753C19EBFB750004AC83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC753B19EBFB750004AC83 /* main.m */; };
 		3AEC753F19EBFB750004AC83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC753E19EBFB750004AC83 /* AppDelegate.m */; };
 		3AEC754219EBFB750004AC83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC754119EBFB750004AC83 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		3AEC754719EBFB750004AC83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEC754619EBFB750004AC83 /* Images.xcassets */; };
 		3AEC754A19EBFB750004AC83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AEC754819EBFB750004AC83 /* LaunchScreen.xib */; };
 		3AEC755619EBFB750004AC83 /* SearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC755519EBFB750004AC83 /* SearchTests.m */; };
+		3AEC756119EBFC550004AC83 /* SearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC756019EBFC550004AC83 /* SearchResultTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4D9A2819EC2BAC00801352 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		3A4D9A2919EC2BAC00801352 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		3AEC753619EBFB750004AC83 /* Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Search.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEC753A19EBFB750004AC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AEC753B19EBFB750004AC83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		3AEC754F19EBFB750004AC83 /* SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEC755419EBFB750004AC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AEC755519EBFB750004AC83 /* SearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTests.m; sourceTree = "<group>"; };
+		3AEC755F19EBFC550004AC83 /* SearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewCell.h; sourceTree = "<group>"; };
+		3AEC756019EBFC550004AC83 /* SearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,11 @@
 				3AEC753E19EBFB750004AC83 /* AppDelegate.m */,
 				3AEC754019EBFB750004AC83 /* ViewController.h */,
 				3AEC754119EBFB750004AC83 /* ViewController.m */,
+				3AEC755F19EBFC550004AC83 /* SearchResultTableViewCell.h */,
+				3AEC756019EBFC550004AC83 /* SearchResultTableViewCell.m */,
 				3AEC754319EBFB750004AC83 /* Main.storyboard */,
+				3A4D9A2819EC2BAC00801352 /* WebViewController.h */,
+				3A4D9A2919EC2BAC00801352 /* WebViewController.m */,
 				3AEC754619EBFB750004AC83 /* Images.xcassets */,
 				3AEC754819EBFB750004AC83 /* LaunchScreen.xib */,
 				3AEC753919EBFB750004AC83 /* Supporting Files */,
@@ -220,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AEC754219EBFB750004AC83 /* ViewController.m in Sources */,
+				3A4D9A2A19EC2BAC00801352 /* WebViewController.m in Sources */,
 				3AEC753F19EBFB750004AC83 /* AppDelegate.m in Sources */,
+				3AEC756119EBFC550004AC83 /* SearchResultTableViewCell.m in Sources */,
 				3AEC753C19EBFB750004AC83 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +355,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Search/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +367,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Search/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +428,7 @@
 				3AEC755B19EBFB750004AC83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AEC755C19EBFB750004AC83 /* Build configuration list for PBXNativeTarget "SearchTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				3AEC755E19EBFB750004AC83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
