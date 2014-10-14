@@ -23,7 +23,7 @@
                                 <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Search the Web" id="gbP-EM-Aai">
                                     <rect key="frame" x="7" y="15" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="barTintColor" red="0.78824300700000005" green="0.2928109834" blue="0.38114193819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
                                         <outlet property="delegate" destination="vXZ-lx-hvc" id="vZ7-jL-gUf"/>
@@ -77,7 +77,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="caffeine" id="6kS-55-nge"/>
+                                    <navigationItem title="dark" id="6kS-55-nge"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -117,28 +117,31 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <color key="backgroundColor" red="0.32250330690000001" green="0.32250330690000001" blue="0.32250330690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="pJK-1H-2ly">
+                                    <barButtonItem systemItem="search" id="Hbi-2p-bvq">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="goBack" destination="El3-jk-yRT" id="cga-Kv-J1Q"/>
+                                            <segue destination="vXZ-lx-hvc" kind="show" id="JCN-Ni-X5B"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="fastForward" id="cXk-PG-vWA">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <action selector="goForward" destination="El3-jk-yRT" id="EEi-9p-aL4"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oP2-I9-1Wv"/>
                                     <barButtonItem systemItem="refresh" id="ulA-UO-LbT">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="reload" destination="El3-jk-yRT" id="OA8-s6-B8W"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="search" id="Hbi-2p-bvq">
+                                    <barButtonItem width="13" style="plain" systemItem="fixedSpace" id="Dgm-fx-vau"/>
+                                    <barButtonItem systemItem="rewind" id="pJK-1H-2ly">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="JCN-Ni-X5B"/>
+                                            <action selector="goBack" destination="El3-jk-yRT" id="cga-Kv-J1Q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="13" style="plain" systemItem="fixedSpace" id="mu7-Hs-Q57"/>
+                                    <barButtonItem systemItem="fastForward" id="cXk-PG-vWA">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="goForward" destination="El3-jk-yRT" id="EEi-9p-aL4"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
