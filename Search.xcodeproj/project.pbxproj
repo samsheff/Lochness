@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A4D9A2A19EC2BAC00801352 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D9A2919EC2BAC00801352 /* WebViewController.m */; };
+		3AE3C6611A52E55400466792 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3C6601A52E55400466792 /* SearchViewController.m */; };
 		3AEC753C19EBFB750004AC83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC753B19EBFB750004AC83 /* main.m */; };
 		3AEC753F19EBFB750004AC83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC753E19EBFB750004AC83 /* AppDelegate.m */; };
 		3AEC754219EBFB750004AC83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC754119EBFB750004AC83 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		3A4D9A2819EC2BAC00801352 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		3A4D9A2919EC2BAC00801352 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		3AE3C65F1A52E55400466792 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		3AE3C6601A52E55400466792 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		3AEC753619EBFB750004AC83 /* Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Search.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEC753A19EBFB750004AC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AEC753B19EBFB750004AC83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				3AEC755F19EBFC550004AC83 /* SearchResultTableViewCell.h */,
 				3AEC756019EBFC550004AC83 /* SearchResultTableViewCell.m */,
 				3AEC754319EBFB750004AC83 /* Main.storyboard */,
+				3AE3C65F1A52E55400466792 /* SearchViewController.h */,
+				3AE3C6601A52E55400466792 /* SearchViewController.m */,
 				3A4D9A2819EC2BAC00801352 /* WebViewController.h */,
 				3A4D9A2919EC2BAC00801352 /* WebViewController.m */,
 				3AEC754619EBFB750004AC83 /* Images.xcassets */,
@@ -233,6 +238,7 @@
 				3A4D9A2A19EC2BAC00801352 /* WebViewController.m in Sources */,
 				3AEC753F19EBFB750004AC83 /* AppDelegate.m in Sources */,
 				3AEC756119EBFC550004AC83 /* SearchResultTableViewCell.m in Sources */,
+				3AE3C6611A52E55400466792 /* SearchViewController.m in Sources */,
 				3AEC753C19EBFB750004AC83 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,7 +361,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Search/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -367,7 +372,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Search/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

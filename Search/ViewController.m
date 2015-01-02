@@ -11,7 +11,9 @@
 #import "WebViewController.h"
 #import "SearchResultTableViewCell.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate> {
+int ROW_HEIGHT = 109;
+
+@interface ViewController () <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate> {
     NSArray *_results;
     NSDictionary *_selectedResult;
 }
@@ -85,6 +87,7 @@
     
     cell.titleLabel.text = candidate[@"title"];
     cell.descriptionView.text = [self stringByStrippingHTML:candidate[@"description"]];
+    cell.descriptionView.textColor = [UIColor whiteColor];
     cell.urlLabel.text = candidate[@"url"];
 
     return cell;

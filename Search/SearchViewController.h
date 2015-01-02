@@ -10,4 +10,8 @@
 
 @interface SearchViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *beardImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *logoTextImageView;
+
+
 @end
