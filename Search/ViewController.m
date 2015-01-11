@@ -51,8 +51,23 @@ int ROW_HEIGHT = 109;
         
         if (requestHandler) {
             NSDictionary *jsonResults = [NSJSONSerialization JSONObjectWithData:requestHandler options:kNilOptions error:nil];
-            
             _results = jsonResults[@"results"];
+            
+            PFObject *query = [[PFObject alloc]initWithClassName:@"Search"];
+            query[@"query"] = self.searchBar.text;
+            query[@"user"] = [PFUser currentUser];
+            
+            [query saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded && !error) {
+                    PFUser *currentUser = [PFUser currentUser];
+                    [currentUser incrementKey:@"SearchCount"];
+                    
+                    [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        if (succeeded && !error)
+                            NSLog(@"Anonymous user updated.");
+                    }];
+                }
+            }];
         }
         dispatch_async((dispatch_get_main_queue()), ^{
             [self.tableView reloadData];
