@@ -85,10 +85,7 @@ int ROW_HEIGHT = 109;
     
     NSDictionary *candidate = [_results objectAtIndex:indexPath.row];
     
-    cell.titleLabel.text = candidate[@"title"];
-    cell.descriptionView.text = [self stringByStrippingHTML:candidate[@"description"]];
-    cell.descriptionView.textColor = [UIColor whiteColor];
-    cell.urlLabel.text = candidate[@"url"];
+    [cell.webViewPreview loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:candidate[@"url"]]]];
 
     return cell;
 }

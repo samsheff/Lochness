@@ -10,8 +10,6 @@
 
 @interface SearchResultTableViewCell : UITableViewCell
 
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-@property (strong, nonatomic) IBOutlet UITextView *descriptionView;
-@property (strong, nonatomic) IBOutlet UILabel *urlLabel;
+@property (strong, nonatomic) IBOutlet UIWebView *webViewPreview;
 
 @end
