@@ -41,7 +41,7 @@ int ROW_HEIGHT = 109;
 - (void)search
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSString *searchURL = [NSString stringWithFormat:@"https://arkade.co/search.json?q=%@", [self.searchBar.text stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+        NSString *searchURL = [NSString stringWithFormat:@"https://arkade.herokuapp.com/search.json?q=%@", [self.searchBar.text stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
         [request setURL:[NSURL URLWithString:searchURL]];
         [request setHTTPMethod:@"GET"];

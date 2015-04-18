@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3AEC753519EBFB750004AC83"
-               BuildableName = "Search.app"
-               BlueprintName = "Search"
+               BuildableName = "Lochness.app"
+               BlueprintName = "Lochness"
                ReferencedContainer = "container:Search.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3AEC754E19EBFB750004AC83"
-               BuildableName = "SearchTests.xctest"
-               BlueprintName = "SearchTests"
+               BuildableName = "LochnessTests.xctest"
+               BlueprintName = "LochnessTests"
                ReferencedContainer = "container:Search.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3AEC754E19EBFB750004AC83"
-               BuildableName = "SearchTests.xctest"
-               BlueprintName = "SearchTests"
+               BuildableName = "LochnessTests.xctest"
+               BlueprintName = "LochnessTests"
                ReferencedContainer = "container:Search.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3AEC753519EBFB750004AC83"
-            BuildableName = "Search.app"
-            BlueprintName = "Search"
+            BuildableName = "Lochness.app"
+            BlueprintName = "Lochness"
             ReferencedContainer = "container:Search.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3AEC753519EBFB750004AC83"
-            BuildableName = "Search.app"
-            BlueprintName = "Search"
+            BuildableName = "Lochness.app"
+            BlueprintName = "Lochness"
             ReferencedContainer = "container:Search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,8 +94,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3AEC753519EBFB750004AC83"
-            BuildableName = "Search.app"
-            BlueprintName = "Search"
+            BuildableName = "Lochness.app"
+            BlueprintName = "Lochness"
             ReferencedContainer = "container:Search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
